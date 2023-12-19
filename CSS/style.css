@@ -80,12 +80,25 @@ ul li.active{
     height: auto;
 }
 
-.social-links{
+.desktop-links{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 80px;
     
+}
+
+.mobile-links {
+    display: none; 
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000; 
+    padding: 10px; 
+    width: 100%; 
+    z-index: 999;
 }
 
 .social-links img{
@@ -191,7 +204,7 @@ html{
     border-radius: 20px;
     padding: 50px;
     cursor: pointer;
-    outline: 10px solid #000000;
+    outline: 5px solid #292929;
     transition: transform 0.5s ease;
 }  
 
@@ -239,8 +252,9 @@ html{
     }
 
     .logo img {
-        margin-top: 40px;
+        margin-top: 30px;
         max-width: 50%;
+        margin-left: 80px;
     }
 
     .image img {
@@ -268,20 +282,24 @@ html{
         margin-top: 20px;
     }
 
-    .social-links {
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000; 
-        padding: 10px; 
-        width: 100%; 
-        z-index: 999;
+    .desktop-links{
+        display: none;
     }
 
+    .mobile-links {
+        display: flex;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        padding: 10px;
+        width: 100%;
+        z-index: 999;
+    }
+    
     ul.desktop-menu{
         display: none;
     }
@@ -318,15 +336,13 @@ html{
     .menu-icon {
         cursor: pointer;
         font-size: 24px;
-        margin: 10px;
-        background-color: none;
-        counter-reset: #fff;
+        margin-left: 5px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 5%;
         width: 5%;
-        padding: 10px;
+        padding: 15px;
         position: fixed;
         top: 0;
         left: 0;
@@ -342,12 +358,12 @@ html{
 
     .wishlist-button {
         font-size: 90%;
-        top: 80%; 
+        top: 70%; 
         padding: 2%;
     }
     
     .game-name {
-        font-size: 40px; 
+        font-size: 30px; 
         top: 10px; 
         left: 10px; 
     }
