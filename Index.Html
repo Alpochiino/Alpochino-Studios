@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alpochino Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/0ebac9b1df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="blackborder"></div>
+        <div class ="main">
+            <div class="logo">  
+                <img src="Images/Alpochino.png" alt="Alpochino Studios Logo">
+            </div>
+
+            <!-- Navigation Menu for Larger Screens -->
+            <ul class="desktop-menu">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GAME (UNKNOWN)</a></li>
+                <li><a href="https://www.youtube.com/channel/UCww67LHHGbFiuQjKnl-JcBA" target="_blank">YOUTUBE</a></li>
+                <li><a href="#">SUBSCRIBE</a></li>
+            </ul>
+
+            <!-- Social Links for Larger Screens -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/alpochiinoodev/" target="_blank"><img src="Images/Instagram.png" alt="Instagram Icon"></a>
+                <a href="https://twitter.com/alpochiino" target="_blank"><img src="Images/Twitter.png" alt="Twitter Icon"></a>
+            </div>
+        </div> 
+
+        <!-- Image of Main Character -->
+       <div class="image">
+            <!-- Image -->
+            <img src="Images/GirlBackground.jpg">
+
+            <!-- Game Name not really done yet -->
+            <div class="game-name">------------------------</div>
+            
+            <!-- Wishlist button with a link to your Steam page -->
+            <a class="wishlist-button" href="#">
+                WISHLIST ON STEAM
+            </a>
+        </div>
+
+        <!-- About me Section -->
+        <div class="about-me">
+            <h2>About Me</h2>
+            <div class="description">
+                <div class="left-description">
+                    <p>Hello there! My name is Christian, i am a passionate individual from Sweden embarking on the exciting journey of creating my first ever indie game. Armed with creativity and a dream, I'm dedicated to bringing unique and captivating gaming experiences to life for the beloved gaming community. This is a dream come true to work on my game. Ever since i was a little child i have dreamt of making a game myself and now that dream could be true.</p>
+                </div>
+                <div class="right-description">
+                    <p>As a solo developer, I aim to craft a game that not only entertains but also reflects my unique vision and storytelling. Every game i make is a game that belongs to my heart, I aspire to establish my own gaming studio, contributing to the ever-evolving world of interactive entertainment. Join me on this adventure, and let's explore the boundless possibilities of game development together!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+                    
+        <!-- Mobile Menu Container -->
+        <div class="mobile-menu-container" onclick="toggleMenu()">
+            <ul class="mobile-menu" id="mobileMenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GAME (UNKNOWN)</a></li>
+                <li><a href="https://www.youtube.com/channel/UCww67LHHGbFiuQjKnl-JcBA" target="_blank">YOUTUBE</a></li>
+                <li><a href="#">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+
+       <!-- <div class="video">
+            <iframe width="834" height="463" src="https://www.youtube.com/embed/ah6w3dvdeH0?si=-GPsb6En1NNmZ7s7" title="YouTube video player" frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>-->
+    </header>
+</body>
+</html>
